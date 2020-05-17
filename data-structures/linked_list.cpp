@@ -5,21 +5,23 @@ class node{
   public:
     int data;
     node *next;
+
+    node(int x){
+      data = x;
+      next = NULL;
+    }
 };
 
 node *head = NULL;
 
 void insert_front(int data){
-  node *temp = new node();
-  temp->data = data;
+  node *temp = new node(data);
   temp->next = head;
   head = temp;
 }
 
 void insert_back(int data){
-  node *temp = new node();
-  temp->data = data;
-  temp->next = NULL;
+  node *temp = new node(data);
 
   node *t = head;
   while(t->next) t = t->next;
