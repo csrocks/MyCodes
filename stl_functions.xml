@@ -1,0 +1,33 @@
+[] - optional
+
+Functions:
+
+void swap(a, b)
+bool binary_search(arr.begin(), arr.end(), key)
+void sort(arr.begin(), arr.end(), [compare_function])
+void reverse(arr.begin(), arr.end());
+int min(int a, int b)
+int max(int a, int b)
+iterator min_element(arr.begin(), arr.end(), [compare_function])
+int accumulate(arr.begin(), arr.end(), 0) : returns sum of vector
+iterator find(arr.begin(), arr.end(), key)
+iterator lower_bound(arr.begin(), arr.end(), key)
+iterator upper_bound(arr.begin(), arr.end(), key)
+make_heap(arr.begin(), arr.end()), arr.front(), push_heap(), pop_heap(), is_heap(), is_heap_until()
+
+
+Data structure:
+
+::iterator
+string: append, assign, at, begin, clear, compare, copy, c_str, empty, end, erase(, find, insert, length, replace, resize, size, substr
+vector<int> name[(size, value)] : push_back, pop_back, front, back, begin, end, rbegin, rend, size, resize, at, insert, erase, clear, empty
+pair<int,int> name
+stack<int> name : push, pop, top, empty, size
+queue<int> name : push, pop, front, empty, size
+deque<int> name
+priority_queue<int, [vector<int>], [greater<int>]> name : empty, pop, push, size, top
+[forward_]list<int> name : begin, end, empty, assign, back, erase, front, push_back, push_front, remove, pop_back, pop_front, insert, reverse, size
+[unordered_]map<int,int> name : at, count, clear, begin, end, empty, erase, find, insert
+[unordered_]multimap<int,int> name
+[unordered_]set<int> name : begin, clear, count, empty, end, erase, find, insert, size
+[unordered_]multiset<int,int> name
